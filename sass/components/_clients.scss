@@ -1,0 +1,38 @@
+.clients-section {
+  &__name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $gray;
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
+  &__clients {
+    width: 170px;
+    height: 92px;
+    border: 1px solid $light-gray;
+    border-radius: 4px;
+    fill: $light-gray;
+    transition: fill, border-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__clients{
+    &:hover {
+    fill: $main-blue;
+    cursor: pointer;
+    border-color: $main-blue;
+  }
+}
+}
+.padding-none {
+  padding: 0;
+}
