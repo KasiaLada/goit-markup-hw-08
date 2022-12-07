@@ -1,0 +1,13 @@
+.menu-toggle {
+  display: flex;
+  
+  color: $gray;
+  background-color: $white;
+  border: none;
+  margin-top: 22px;
+  cursor: pointer;
+  &:hover {
+    color: $main-blue;
+  }
+}
+
