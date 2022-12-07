@@ -1,13 +1,15 @@
-.menu-toggle {
+.navigation {
   display: flex;
-  
+  justify-content: flex-end;
+}
+.menu-toggle {
   color: $gray;
   background-color: $white;
   border: none;
   margin-top: 22px;
   cursor: pointer;
+
   &:hover {
     color: $main-blue;
   }
 }
-
