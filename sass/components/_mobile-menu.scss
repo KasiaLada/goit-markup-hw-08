@@ -38,26 +38,23 @@
   right: 25.33px;
   fill: $gray;
 }
-.menu-toggle:hover svg {
-  fill: $main-blue;
+.menu-toggle:hover svg { 
+    fill : $main-blue;}
+
+
+
+@media (max-width: 767px) {
+//   .menu {
+//     display: none;
+//   }
 }
 
-@media (max-width: 480px) {
-  .container {
-    max-width: 450px;
-    margin: auto;
-  }
+// .menu .link {
+//   padding: 10px;
+//   color: inherit;
+//   text-decoration: none;
+// }
 
-  .menu {
-    display: none;
-  }
-}
-
-.menu .link {
-  padding: 10px;
-  color: inherit;
-  text-decoration: none;
-}
 
 .menu-toggle {
   min-height: 40px;
@@ -75,11 +72,6 @@
   outline: none;
 }
 @media (min-width: 768px) {
-  .container {
-    max-width: 738px;
-    margin: auto;
-  }
-
   .menu-toggle {
     display: none;
   }
@@ -103,3 +95,4 @@
 .menu-container.is-open {
   transform: translateX(0);
 }
+
