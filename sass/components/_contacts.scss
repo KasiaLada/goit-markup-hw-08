@@ -1,5 +1,5 @@
 .contact {
-  display: flex;
+  display: none;
   margin-left: auto;
   gap: 40px;
   align-items: center;
@@ -36,5 +36,11 @@
     &:focus svg {
       fill: $main-blue;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .contact{
+  display: flex;
   }
 }
