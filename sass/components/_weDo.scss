@@ -1,6 +1,20 @@
+
+
 .we-do {
   &__list {
     display: none;
+    
+  }
+}
+.what-we-do {
+  display:none;
+}
+
+
+@media (min-width: 768px) {
+  .we-do {
+  &__list {
+    display: flex;
     gap: 44px;
   }
   &__text-label {
@@ -27,6 +41,7 @@
     height: 70px;
   }
 }
+}
 img {
   display: block;
   width: 100%;
@@ -45,8 +60,3 @@ img {
 .container {
   max-width: 768px;
 }
-@media screen and (min: 768px) {
-  .we-do {
-  &__list {
-    display: flex;
-     
