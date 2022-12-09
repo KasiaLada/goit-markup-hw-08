@@ -1,6 +1,7 @@
 .our-team {
   background-color: $light-white;
-  height: 708px;
+  height: 100%;
+  padding: 93px;
 
   &__name {
     display: block;
@@ -26,6 +27,7 @@
   }
   &__list {
     display: flex;
+     flex-wrap:wrap;
     gap: 39px;
   }
   &__member {
@@ -84,5 +86,5 @@
 }
 
 @media (min-width: 768px) {
-  
+
 }

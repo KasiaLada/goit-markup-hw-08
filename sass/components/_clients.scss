@@ -20,6 +20,7 @@
   }
   &__list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -35,4 +36,8 @@
 }
 .padding-none {
   padding: 0;
+}
+
+@media (min-width: 768px) {
+
 }

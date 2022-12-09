@@ -2,10 +2,10 @@
   &__card-set {
     display: flex;
     flex-direction: column;
-    max-width:450px;
+    max-width: 450px;
     align-items: center;
     gap: 10px;
-    margin:0 auto;
+    margin: 0 auto;
   }
 
   &__icon {
@@ -41,8 +41,6 @@
   }
 }
 @media (min-width: 768px) {
-  
-
   .about {
     &__card-set {
       flex-direction: row;
@@ -81,7 +79,6 @@
       color: $brand-color;
     }
   }
-  
 }
 // ==========
 @media (min-width: 1200px) {
@@ -123,5 +120,4 @@
       color: $brand-color;
     }
   }
-  
 }
