@@ -1,46 +1,55 @@
+@media (min-width: 480px) {
+
 .contact {
   display: none;
-  margin-left: auto;
-  gap: 40px;
-  align-items: center;
+}
+}
 
-  &__link {
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $brand-color;
-  }
-  &__link {
-    &:hover {
-      color: $main-blue;
+@media (min-width: 768px) {
+  .contact {
+    display: block;
+    margin-left: auto;
+    gap: 40px;
+    align-items: center;
+
+    &__link {
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $brand-color;
     }
-  }
-  &__link {
-    &:focus {
-      color: $main-blue;
+    &__link {
+      &:hover {
+        color: $main-blue;
+      }
     }
-  }
-  &__icon {
-    fill: $brand-color;
-    margin-right: 7px;
-  }
-  &__link {
-    &:hover svg {
-      fill: $main-blue;
+    &__link {
+      &:focus {
+        color: $main-blue;
+      }
     }
-  }
-  &__link {
-    &:focus svg {
-      fill: $main-blue;
+    &__icon {
+      fill: $brand-color;
+      margin-right: 7px;
+    }
+    &__link {
+      &:hover svg {
+        fill: $main-blue;
+      }
+    }
+    &__link {
+      &:focus svg {
+        fill: $main-blue;
+      }
     }
   }
 }
 
-@media (min-width: 768px) {
-  .contact{
-  display: flex;
+@media (min-width: 1200px) {
+  .contact {
+    display: flex;
   }
 }

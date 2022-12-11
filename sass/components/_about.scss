@@ -1,54 +1,55 @@
 @media (min-width: 480px) {
+  .about {
+    &__card-set {
+      display: flex;
+      flex-direction: column;
+      max-width: 450px;
+      align-items: center;
+      gap: 10px;
+      margin: 0 auto;
+    }
 
-.about {
-  &__card-set {
-    display: flex;
-    flex-direction: column;
-    max-width: 450px;
-    align-items: center;
-    gap: 10px;
-    margin: 0 auto;
-  }
+    &__icon {
+      width: 100%;
+      height: 120px;
+      background-color: $light-white;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
 
-  &__icon {
-    width: 100%;
-    height: 120px;
-    background-color: $light-white;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-  }
+    &__lorem {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $gray;
+    }
 
-  &__lorem {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $gray;
+    &__lorem-p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $brand-color;
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
-
-  &__lorem-p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $brand-color;
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
 }
 
 @media (min-width: 768px) {
   .about {
     &__card-set {
-      flex-direction: row;
+      display: flex;
+      flex-wrap: wrap;
       gap: 10px;
+      
     }
 
     &__icon {
@@ -86,42 +87,88 @@
 }
 // ==========
 @media (min-width: 1200px) {
-  .about {
-    &__card-set {
-      flex-direction: row;
-      gap: 10px;
-    }
+  .our-team {
+  background-color: $light-white;
+  height: 708px;
 
-    &__icon {
-      width: 270px;
-      height: 120px;
-      background-color: $light-white;
-      border-radius: 4px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 30px;
-    }
-    &__item {
-      flex-basis: calc((100% - 30px) / 4);
-    }
-    &__lorem {
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: $gray;
-    }
-
-    &__lorem-p {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.71;
-      letter-spacing: 0.03em;
-      color: $brand-color;
+  &__name {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $gray;
+    margin: 30px 99px 10px 99px;
+  }
+  &__inscription {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $gray;
+    padding-top: 94px;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    gap: 39px;
+  }
+  &__member {
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    flex: 1;
+  }
+  &__profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $brand-color;
+    margin-bottom: 30px;
+  }
+  &__socialmedia {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  &__socialmedia-list {
+    display: flex;
+    gap: 10px;
+  }
+  &__socialmedia-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: $light-gray;
+    transition: background-color, fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__socialmedia-icon {
+    &:focus {
+      background-color: $main-blue;
     }
   }
+  &__socialmedia-icon {
+    &:hover {
+      background-color: $main-blue;
+      cursor: pointer;
+      fill: $white;
+  }
+}
+}
+
+.our-team-padding {
+  padding-top: 0;
+}
 }

@@ -1,3 +1,5 @@
+@media (min-width: 480px) {
+
 .header {
   border: 1px solid #ececec;
 }
@@ -81,7 +83,7 @@
     }
   }
 }
-
+}
 @media (min-width: 768px) {
   .links {
     display: flex;
