@@ -2,6 +2,7 @@
   background-color: $light-white;
   height: 100%;
   padding: 93px;
+  
 
   &__name {
     display: block;
@@ -29,6 +30,7 @@
     display: flex;
      flex-wrap:wrap;
     gap: 39px;
+    
   }
   &__member {
     display: flex;
@@ -38,6 +40,7 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     flex: 1;
+    
   }
   &__profession {
     font-weight: 400;
