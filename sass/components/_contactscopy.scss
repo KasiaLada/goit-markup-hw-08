@@ -1,0 +1,58 @@
+
+
+.contact {
+   @media screen and (min-width: 480px) {
+    max-width: 450px;
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 738px;
+    display: block;
+    margin-left: auto;
+    gap: 40px;
+    align-items: center;
+  }
+   @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    display: flex;
+    
+  }
+  
+}
+    &__link {
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $brand-color;
+    }
+    &__link {
+      &:hover {
+        color: $main-blue;
+      }
+    }
+    &__link {
+      &:focus {
+        color: $main-blue;
+      }
+    }
+    &__icon {
+      fill: $brand-color;
+      margin-right: 7px;
+    }
+    &__link {
+      &:hover svg {
+        fill: $main-blue;
+      }
+    }
+    &__link {
+      &:focus svg {
+        fill: $main-blue;
+      }
+    }
+  
+
+
