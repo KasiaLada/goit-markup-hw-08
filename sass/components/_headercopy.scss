@@ -41,6 +41,10 @@
 }
 
 .links {
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+    display:none;
+  }
   display: none;
   margin-left: 80px;
   margin-top: 32px;
