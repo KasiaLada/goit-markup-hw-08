@@ -17,7 +17,9 @@
       color: $main-blue;
     }
   }
-  
+  .mobile-menu {
+    margin-bottom: 36px;
+  }
   .mobile-menu .links__link {
     font-family: "Roboto";
     font-style: normal;
@@ -27,6 +29,7 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: $gray;
+    
     &:hover {
       color: $main-blue;
     }
@@ -103,16 +106,20 @@
   // kontakty
 
   .mobile-contact {
-    display: flex;
-    margin-left: auto;
-    gap: 40px;
-    align-items: center;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $brand-color;
+    margin-left: 0 ;
 
     &__link {
       text-decoration: none;
       font-style: normal;
       font-weight: 500;
-      font-size: 34px;
+      font-size: 24px;
       line-height: 1.17;
       letter-spacing: 0.02em;
       color: $brand-color;
@@ -121,7 +128,7 @@
       text-decoration: none;
       font-style: normal;
       font-weight: 500;
-      font-size: 34px;
+      font-size: 24px;
       line-height: 1.17;
       letter-spacing: 0.02em;
       color: $brand-color;
@@ -151,17 +158,11 @@
       }
     }
   }
-  .mobile-contact__wrapper .mobile-contact__tel {
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: $brand-color;
-  }
+  
 
   .mobile-contact__socialmedia {
+    display: flex;
+    justify-content:space-around;
     position: absolute;
     bottom: 48px;
   }
@@ -178,6 +179,7 @@
     margin-left: 40px;
     padding-right: 10px;
     border-right: 1px solid $main-blue;
+     justify-content:space-around;
   }
   .mobile-contact__twitter {
     text-decoration: none;
@@ -191,6 +193,7 @@
     color: $main-blue;
     padding-right: 10px;
     border-right: 1px solid $main-blue;
+     justify-content:space-around;
   }
   .mobile-contact__facebook {
     text-decoration: none;
@@ -204,6 +207,7 @@
     color: $main-blue;
     padding-right: 10px;
     border-right: 1px solid $main-blue;
+     justify-content:space-around;
   }
 
   .mobile-contact__linkedin {
@@ -218,6 +222,7 @@
     color: $main-blue;
     padding-right: 10px;
     border-right: 1px solid $main-blue;
+     justify-content:space-around;
   }
 
 
