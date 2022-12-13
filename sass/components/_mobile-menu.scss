@@ -7,7 +7,6 @@
   }
   
   .menu-toggle {
-    position:absolute;
     color: $gray;
     background-color: $white;
     border: none;
@@ -19,6 +18,11 @@
       color: $main-blue;
     }
   }
+  .menu-toggle--inside {
+    position: absolute;
+  }
+
+  
   .mobile-menu {
     margin-bottom: 36px;
     
