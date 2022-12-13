@@ -1,242 +1,239 @@
- 
-  .menu-container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
-  }
-  
-  .menu-toggle {
-    color: $gray;
-    background-color: $white;
-    border: none;
-    margin-top: 22px;
-    cursor: pointer;
-    width: 24px;
+.menu-toggle {
+  color: $gray;
+  background-color: $white;
+  border: none;
+  margin-top: 22px;
+  cursor: pointer;
+  width: 24px;
 
-    &:hover {
-      color: $main-blue;
-    }
+  &:hover {
+    color: $main-blue;
   }
-  .menu-toggle--inside {
-    position: absolute;
-  
-  }
+}
+.menu-toggle--inside {
+  position: absolute;
+  right: 0;
+}
 
+.mobile-menu {
+  margin-bottom: 36px;
+}
+.mobile-menu .links__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: $gray;
 
-  .mobile-menu {
-    margin-bottom: 36px;
-    
+  &:hover {
+    color: $main-blue;
   }
-  .mobile-menu .links__link {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: $gray;
-    
-    
-    &:hover {
-      color: $main-blue;
-    }
+}
+.mobile-contact__wrapper {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: $gray;
+  &:hover {
+    color: $main-blue;
   }
-  .mobile-contact__wrapper {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: $gray;
-    &:hover {
-      color: $main-blue;
-    }
+}
+.mobile-contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+.mobile-contact__wrapper .mobile-contact__tel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: $gray;
+  margin-left: 40px;
+  &:hover {
+    color: $main-blue;
   }
-  .mobile-contact {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-  }
-  .mobile-contact__wrapper .mobile-contact__tel {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: $gray;
-    margin-left: 40px;
-    &:hover {
-      color: $main-blue;
-    }
-  }
+}
 
-  .menu-toggle .close-button {
-    position: absolute;
-    top: 21px;
-    right: 25.33px;
-    fill: $gray;
-  }
-  .menu-toggle:hover svg {
-    fill: $main-blue;
-  }
+.menu-toggle .close-button {
+  position: absolute;
+  top: 21px;
+  right: 25.33px;
+  fill: $gray;
+}
+.menu-toggle:hover svg {
+  fill: $main-blue;
+}
 
-  .menu .link {
-    padding: 10px;
-    color: inherit;
-    text-decoration: none;
-  }
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
 
-  .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-  }
-  @media (min-width: 768px) {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+@media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 }
-  // kontakty
+// kontakty
 
-  .mobile-contact {
+.mobile-contact {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $brand-color;
+  margin-left: 0;
+
+  &__link {
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: $brand-color;
-    margin-left: 0 ;
-
-    &__link {
-      text-decoration: none;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 1.17;
-      letter-spacing: 0.02em;
-      color: $brand-color;
-    }
-    &__tel {
-      text-decoration: none;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 1.17;
-      letter-spacing: 0.02em;
-      color: $brand-color;
-      
-    }
-    &__link {
-      &:hover {
-        color: $main-blue;
-      }
-    }
-    &__link {
-      &:focus {
-        color: $main-blue;
-      }
-    }
-    &__icon {
-      fill: $brand-color;
-      margin-right: 7px;
-    }
-    &__link {
-      &:hover svg {
-        fill: $main-blue;
-      }
-    }
-    &__link {
-      &:focus svg {
-        fill: $main-blue;
-      }
+  }
+  &__tel {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $brand-color;
+  }
+  &__link {
+    &:hover {
+      color: $main-blue;
     }
   }
+  &__link {
+    &:focus {
+      color: $main-blue;
+    }
+  }
+  &__icon {
+    fill: $brand-color;
+    margin-right: 7px;
+  }
+  &__link {
+    &:hover svg {
+      fill: $main-blue;
+    }
+  }
+  &__link {
+    &:focus svg {
+      fill: $main-blue;
+    }
+  }
+}
+
+.mobile-contact__socialmedia-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 10px;
+  margin-top:64px;
+   margin-left:0;
+}
+.mobile-contact__socialmedia {
+  display: flex;
+  justify-content: space-around;
+
+  bottom: 48px;
+}
+.mobile-contact__instagram {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+
+  color: $main-blue;
+  margin-left: 40px;
+  padding-right: 10px;
+  border-right: 1px solid $main-blue;
+  justify-content: space-around;
+}
+.mobile-contact__twitter {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+
+  color: $main-blue;
+  padding-right: 10px;
+  border-right: 1px solid $main-blue;
+  justify-content: space-around;
+}
+.mobile-contact__facebook {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
   
+  color: $main-blue;
+  padding-right: 10px;
+  border-right: 1px solid $main-blue;
+  justify-content: space-around;
+}
 
-  .mobile-contact__socialmedia {
-    display: flex;
-    justify-content:space-around;
-    position: absolute;
-    bottom: 48px;
-  }
-  .mobile-contact__instagram {
-    text-decoration: none;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-
-    color: $main-blue;
-    margin-left: 40px;
-    padding-right: 10px;
-    border-right: 1px solid $main-blue;
-     justify-content:space-around;
-  }
-  .mobile-contact__twitter {
-    text-decoration: none;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-    margin-left: 145px;
-    color: $main-blue;
-    padding-right: 10px;
-    border-right: 1px solid $main-blue;
-     justify-content:space-around;
-  }
-  .mobile-contact__facebook {
-    text-decoration: none;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-    margin-left: 224px;
-    color: $main-blue;
-    padding-right: 10px;
-    border-right: 1px solid $main-blue;
-     justify-content:space-around;
-  }
-
-  .mobile-contact__linkedin {
-    text-decoration: none;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-    margin-left: 325px;
-    color: $main-blue;
-    padding-right: 10px;
-    border-right: 1px solid $main-blue;
-     justify-content:space-around;
-  }
-
-
-
+.mobile-contact__linkedin {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: $main-blue;
+  padding-right: 10px;
+  border-right: 1px solid $main-blue;
+  justify-content: space-around;
+}
 
 .menu-container {
   position: fixed;
