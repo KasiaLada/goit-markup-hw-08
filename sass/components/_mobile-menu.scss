@@ -1,11 +1,13 @@
  
   .menu-container {
-    display:flex;     
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
 
   }
   
   .menu-toggle {
+    position:absolute;
     color: $gray;
     background-color: $white;
     border: none;
