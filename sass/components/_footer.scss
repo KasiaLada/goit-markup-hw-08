@@ -7,6 +7,10 @@
     align-items: center;
      display: flex;
   }
+   @media (min-width: 1200px){
+    
+     display: flex;
+  }
 
     &__logo {
       display: flex;
@@ -413,6 +417,7 @@
 @media (min-width: 1200px) {
   .footer {
     background-color: $dark-gray;
+    display: flex;
 
     &__logo {
       display: flex;
