@@ -1,6 +1,16 @@
 .footer {
   background-color: $dark-gray;
 
+  &__logo-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
   &__logo {
     display: flex;
     font-family: "Raleway";
@@ -30,6 +40,8 @@
     }
     @media (min-width: 1200px) {
       display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
     padding-bottom: 60px;
     display: flex;
@@ -135,6 +147,9 @@
   // =====================
   &__newsletter {
     width: 100%;
+    @media screen and (min-width: 1200px) {
+      max-width: 570px;
+    }
   }
   &__newsletter-p {
     font-family: Roboto;
@@ -157,6 +172,9 @@
     align-items: center;
     display: center;
     padding: 0 15px;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
   &__newsletter-input {
     max-width: 450px;
@@ -209,7 +227,10 @@
     height: 24;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 20px;
+
+    @media (min-width: 1200px) {
+      margin-left: 12px;
+    }
   }
   &__newsletter-btn svg {
     margin-left: 24px;
