@@ -20,9 +20,10 @@
   }
   .menu-toggle--inside {
     position: absolute;
+  
   }
 
-  
+
   .mobile-menu {
     margin-bottom: 36px;
     
@@ -140,6 +141,7 @@
       line-height: 1.17;
       letter-spacing: 0.02em;
       color: $brand-color;
+      
     }
     &__link {
       &:hover {

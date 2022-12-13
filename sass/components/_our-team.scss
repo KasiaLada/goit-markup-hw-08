@@ -26,17 +26,18 @@
     margin-bottom: 50px;
   }
   &__list {
-    @media screen and (min-width: 480px) {
-    max-width: 450px;
     display: flex;
     flex-direction: column;
     gap: 39px;
+    @media screen and (min-width: 480px) {
+    max-width: 450px;
+    
   }
   @media screen and (min-width: 768px) {
-    display: flex;
+    
     flex-direction: wrap;
     
-    gap: 39px;
+    
     max-width:738px;
     
   }
