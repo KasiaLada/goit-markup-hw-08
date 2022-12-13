@@ -1,18 +1,23 @@
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
+  width: 100%;
+  max-width: 450px;
+  min-height: 608px;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   background: $white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition-property: transform;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    max-width: 528px;
+    height: 581px;
+  }
   &:hover {
     transform: opacity;
   }
@@ -31,15 +36,26 @@
     align-items: center;
   }
   &__p {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 0.869;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $gray;
-    margin-top: 40px;
+    @media screen and (min-width: 480px) {
+      max-width: 370px;
+      margin-top: 40px;
+      line-height: 1.5;
+      margin-left: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 450px;
+    }
+
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 0.869;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: $gray;
+      margin-top: 40px;
+    
   }
   &__main-form {
     margin-top: 35px;
@@ -88,11 +104,15 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: $brand-color;
-    margin-left: 32px;
+    margin-left: 20px;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      margin-left: 32px;
+    }
   }
   &__fieldset {
     display: flex;
@@ -123,8 +143,8 @@
   }
   &__checkbox-svg {
     position: absolute;
-    top: 440px;
-    right: 458px;
+    top: 483px;
+    right: 393px;
     width: 16px;
     height: 15px;
     background-color: $white;
@@ -135,6 +155,10 @@
     justify-content: center;
     align-items: center;
     fill: $white;
+    @media screen and (min-width: 1200px) {
+      top: 453px;
+      right: 465px;
+    }
   }
   &__button {
     background-color: $main-blue;
@@ -143,6 +167,7 @@
     width: 200px;
     height: 50px;
     border: none;
+    justify-content: center;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -154,10 +179,12 @@
     line-height: 0.53;
     margin-top: 30px;
     align-items: center;
-    margin-left: 125px;
+    margin-left: 90px;
     cursor: pointer;
+    @media screen and (min-width: 1200px) {
+      margin-left: 125px;
+    }
   }
-  
 }
 
 /* -------------- */
