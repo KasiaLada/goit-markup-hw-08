@@ -24,17 +24,29 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    margin: 0 auto;
+    @media screen and (min-width: 450px) {
+      max-width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 738px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      max-width: 1200px;
+    }
   }
 
-  &__clients{
+  &__clients {
     &:hover {
-    fill: $main-blue;
-    cursor: pointer;
-    border-color: $main-blue;
+      fill: $main-blue;
+      cursor: pointer;
+      border-color: $main-blue;
+    }
   }
-}
 }
 
 @media (min-width: 768px) {
-
 }
