@@ -30,23 +30,20 @@
     flex-direction: column;
     gap: 39px;
     @media screen and (min-width: 480px) {
-    max-width: 450px;
-    
-  }
-  @media screen and (min-width: 768px) {
-    
-    flex-direction: wrap;
-    
-    
-    max-width:738px;
-    
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-   flex-direction: row;
-    gap: 39px;
-  }
-    
+      max-width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 0;
+      justify-content: space-between;
+      row-gap: 39px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      gap: 39px;
+    }
   }
   &__member {
     display: flex;
@@ -54,19 +51,16 @@
     max-width: 354px;
     width: 100%;
     background: $white;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     flex: 1;
     @media screen and (min-width: 768px) {
-     max-width:738px;
-    flex-basis: calc((100% - 30px) / 2);
-  }
+      max: width 354px;
+      flex-basis: calc((100% - 30px) / 2);
+    }
   }
 
-  &__photo {
-
-  }
+  
   &__profession {
     font-weight: 400;
     font-size: 16px;
@@ -105,8 +99,8 @@
       background-color: $main-blue;
       cursor: pointer;
       fill: $white;
+    }
   }
-}
 }
 
 .our-team-padding {
