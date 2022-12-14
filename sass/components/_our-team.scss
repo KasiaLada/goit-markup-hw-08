@@ -29,14 +29,12 @@
     display: flex;
     flex-direction: column;
     gap: 39px;
-    max-width: 450px;
+    width: 450px;
     @media screen and (min-width: 480px) {
       max-width: 450px;
-      
     }
     @media screen and (min-width: 768px) {
-      
-      max-width: 738px;
+      max-width: 354px;
       flex-wrap: wrap;
       flex-direction: row;
       gap: 0;
@@ -44,28 +42,31 @@
       row-gap: 39px;
     }
     @media screen and (min-width: 1200px) {
-      max-width: 1200px;
+      max-width: 270px;
       display: flex;
       flex-direction: row;
       gap: 39px;
     }
   }
   &__member {
+    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    max-width: 354px;
-    width: 100%;
+    max-width: 450px;
     background: $white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     flex: 1;
+    @media screen and (min-width: 480px) {
+      max-width: 450px;
+    }
     @media screen and (min-width: 768px) {
-      max: width 354px;
+      max: width 738px;
       flex-basis: calc((100% - 30px) / 2);
     }
   }
 
-  
   &__profession {
     font-weight: 400;
     font-size: 16px;
