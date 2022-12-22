@@ -252,3 +252,8 @@
 .menu-container.is-open {
   transform: translateX(0);
 }
+
+
+&__tablet-menu {
+    display:flex;
+  }
